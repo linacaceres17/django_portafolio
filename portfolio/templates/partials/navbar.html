@@ -1,16 +1,20 @@
 {% load static %}
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand fw-bold fst-ital" href="/">LinaCaceres</a>
+    <div class="navbar-logo">
+        <a class="navbar-brand" href="{% url 'home' %}"> <img src ="{% static 'portfolio/logo.png' %}" width="80px" alt=""></a>
+    </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="/blog/">Sobre Mi</a>
+          <a class="nav-link" href="/blog/">Sobre mi</a>
           <li class="nav-item d-flex align-items-center">
-          <a class="btn btn-primary btn-sm" href="{% static 'portfolio/cv.pdf' %}" target="_blank">Download CV</a>
+            <a class="btn btn-light btn-sm "href= "{% static 'portfolio/cv.pdf' %}" target="_blanck" >Descargar CV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://api.whatsapp.com/send?phone=573012958730&text=Hola%20Lina%2C%20%C2%BFC%C3%B3mo%20est%C3%A1s%3F">Whatsapp</a>
           </li>
         </div>
       </div>
